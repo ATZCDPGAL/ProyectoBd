@@ -28,57 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtAlbum = new System.Windows.Forms.TextBox();
+            this.txtArtista = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txtDuracion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Insertar = new System.Windows.Forms.Button();
+            this.Actualizar = new System.Windows.Forms.Button();
+            this.Seleccionar = new System.Windows.Forms.Button();
+            this.Eliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(139, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(343, 22);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtNombre.Location = new System.Drawing.Point(139, 21);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(343, 22);
+            this.txtNombre.TabIndex = 0;
+            this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtAlbum
             // 
-            this.textBox2.Location = new System.Drawing.Point(139, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(343, 22);
-            this.textBox2.TabIndex = 1;
+            this.txtAlbum.Location = new System.Drawing.Point(139, 71);
+            this.txtAlbum.Name = "txtAlbum";
+            this.txtAlbum.Size = new System.Drawing.Size(343, 22);
+            this.txtAlbum.TabIndex = 1;
             // 
-            // textBox3
+            // txtArtista
             // 
-            this.textBox3.Location = new System.Drawing.Point(139, 125);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(343, 22);
-            this.textBox3.TabIndex = 2;
+            this.txtArtista.Location = new System.Drawing.Point(139, 125);
+            this.txtArtista.Name = "txtArtista";
+            this.txtArtista.Size = new System.Drawing.Size(343, 22);
+            this.txtArtista.TabIndex = 2;
             // 
-            // textBox4
+            // txtFecha
             // 
-            this.textBox4.Location = new System.Drawing.Point(139, 193);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(343, 22);
-            this.textBox4.TabIndex = 3;
+            this.txtFecha.Location = new System.Drawing.Point(139, 193);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(343, 22);
+            this.txtFecha.TabIndex = 3;
             // 
-            // textBox5
+            // txtDuracion
             // 
-            this.textBox5.Location = new System.Drawing.Point(139, 247);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(343, 22);
-            this.textBox5.TabIndex = 4;
+            this.txtDuracion.Location = new System.Drawing.Point(139, 247);
+            this.txtDuracion.Name = "txtDuracion";
+            this.txtDuracion.Size = new System.Drawing.Size(343, 22);
+            this.txtDuracion.TabIndex = 4;
             // 
             // label1
             // 
@@ -131,61 +131,61 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Duración";
             // 
-            // button1
+            // Insertar
             // 
-            this.button1.Location = new System.Drawing.Point(89, 306);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(322, 37);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "&Insertar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Insertar.Location = new System.Drawing.Point(89, 306);
+            this.Insertar.Name = "Insertar";
+            this.Insertar.Size = new System.Drawing.Size(322, 37);
+            this.Insertar.TabIndex = 10;
+            this.Insertar.Text = "&Insertar";
+            this.Insertar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Actualizar
             // 
-            this.button2.Location = new System.Drawing.Point(89, 355);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(322, 37);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "&Actualizar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Actualizar.Location = new System.Drawing.Point(89, 355);
+            this.Actualizar.Name = "Actualizar";
+            this.Actualizar.Size = new System.Drawing.Size(322, 37);
+            this.Actualizar.TabIndex = 11;
+            this.Actualizar.Text = "&Actualizar";
+            this.Actualizar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Seleccionar
             // 
-            this.button3.Location = new System.Drawing.Point(89, 408);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(322, 37);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "&Seleccionar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Seleccionar.Location = new System.Drawing.Point(89, 408);
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.Size = new System.Drawing.Size(322, 37);
+            this.Seleccionar.TabIndex = 12;
+            this.Seleccionar.Text = "&Seleccionar";
+            this.Seleccionar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // Eliminar
             // 
-            this.button4.Location = new System.Drawing.Point(89, 461);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(322, 37);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "&Eliminar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Eliminar.Location = new System.Drawing.Point(89, 461);
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Size = new System.Drawing.Size(322, 37);
+            this.Eliminar.TabIndex = 13;
+            this.Eliminar.Text = "&Eliminar";
+            this.Eliminar.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 549);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Eliminar);
+            this.Controls.Add(this.Seleccionar);
+            this.Controls.Add(this.Actualizar);
+            this.Controls.Add(this.Insertar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDuracion);
+            this.Controls.Add(this.txtFecha);
+            this.Controls.Add(this.txtArtista);
+            this.Controls.Add(this.txtAlbum);
+            this.Controls.Add(this.txtNombre);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
@@ -198,20 +198,20 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtAlbum;
+        private System.Windows.Forms.TextBox txtArtista;
+        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.TextBox txtDuracion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Insertar;
+        private System.Windows.Forms.Button Actualizar;
+        private System.Windows.Forms.Button Seleccionar;
+        private System.Windows.Forms.Button Eliminar;
     }
 }
 
