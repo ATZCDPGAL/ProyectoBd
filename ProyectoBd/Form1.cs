@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FireSharp.Config;
+using FireSharp.Response;
+using FireSharp.Interfaces;
 
 namespace ProyectoBd
 {
@@ -16,6 +19,8 @@ namespace ProyectoBd
         {
             InitializeComponent();
         }
+
+        IFirebaseConfig fcon = new IFirebaseConfig()
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
