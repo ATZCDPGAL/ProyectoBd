@@ -20,7 +20,7 @@ namespace ProyectoBd
             InitializeComponent();
         }
 
-        IFirebaseConfig fcon = new IFirebaseConfig()
+        IFirebaseConfig fcon = new IFirebaseConfig();
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
