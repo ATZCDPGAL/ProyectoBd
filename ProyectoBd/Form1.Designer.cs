@@ -35,9 +35,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.ImgAlbum = new System.Windows.Forms.PictureBox();
-            this.Buscar = new System.Windows.Forms.Button();
             this.txtDisquera = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,12 +48,11 @@
             this.txtAlbum = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgAlbum)).BeginInit();
             this.SuspendLayout();
             // 
             // Insertar
             // 
-            this.Insertar.Location = new System.Drawing.Point(199, 355);
+            this.Insertar.Location = new System.Drawing.Point(111, 354);
             this.Insertar.Name = "Insertar";
             this.Insertar.Size = new System.Drawing.Size(322, 37);
             this.Insertar.TabIndex = 10;
@@ -66,7 +62,7 @@
             // 
             // Actualizar
             // 
-            this.Actualizar.Location = new System.Drawing.Point(199, 404);
+            this.Actualizar.Location = new System.Drawing.Point(111, 403);
             this.Actualizar.Name = "Actualizar";
             this.Actualizar.Size = new System.Drawing.Size(322, 37);
             this.Actualizar.TabIndex = 11;
@@ -76,7 +72,7 @@
             // 
             // Seleccionar
             // 
-            this.Seleccionar.Location = new System.Drawing.Point(199, 457);
+            this.Seleccionar.Location = new System.Drawing.Point(111, 456);
             this.Seleccionar.Name = "Seleccionar";
             this.Seleccionar.Size = new System.Drawing.Size(322, 37);
             this.Seleccionar.TabIndex = 12;
@@ -86,7 +82,7 @@
             // 
             // Eliminar
             // 
-            this.Eliminar.Location = new System.Drawing.Point(199, 510);
+            this.Eliminar.Location = new System.Drawing.Point(111, 509);
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Size = new System.Drawing.Size(322, 37);
             this.Eliminar.TabIndex = 13;
@@ -98,9 +94,6 @@
             // 
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txtId);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.ImgAlbum);
-            this.panel1.Controls.Add(this.Buscar);
             this.panel1.Controls.Add(this.txtDisquera);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -115,7 +108,7 @@
             this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(740, 337);
+            this.panel1.Size = new System.Drawing.Size(509, 337);
             this.panel1.TabIndex = 14;
             // 
             // label8
@@ -134,36 +127,6 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(343, 22);
             this.txtId.TabIndex = 24;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(546, 32);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 20);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Imagen del albúm";
-            // 
-            // ImgAlbum
-            // 
-            this.ImgAlbum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgAlbum.Location = new System.Drawing.Point(528, 55);
-            this.ImgAlbum.Name = "ImgAlbum";
-            this.ImgAlbum.Size = new System.Drawing.Size(178, 174);
-            this.ImgAlbum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ImgAlbum.TabIndex = 22;
-            this.ImgAlbum.TabStop = false;
-            // 
-            // Buscar
-            // 
-            this.Buscar.Location = new System.Drawing.Point(580, 245);
-            this.Buscar.Name = "Buscar";
-            this.Buscar.Size = new System.Drawing.Size(75, 23);
-            this.Buscar.TabIndex = 15;
-            this.Buscar.Text = "Buscar";
-            this.Buscar.UseVisualStyleBackColor = true;
-            this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
             // 
             // txtDisquera
             // 
@@ -273,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 549);
+            this.ClientSize = new System.Drawing.Size(525, 549);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.Seleccionar);
@@ -287,7 +250,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgAlbum)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,9 +270,6 @@
         private System.Windows.Forms.TextBox txtArtista;
         private System.Windows.Forms.TextBox txtAlbum;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox ImgAlbum;
-        private System.Windows.Forms.Button Buscar;
         private System.Windows.Forms.TextBox txtDisquera;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;

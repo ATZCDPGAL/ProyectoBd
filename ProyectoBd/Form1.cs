@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FireSharp.Config;
-using FireSharp.Response;
-using FireSharp.Interfaces;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using FireSharp.Config; /*Agregamos las librerias para trabajar con firebase*/
+using FireSharp.Response; /*Agregamos las librerias para trabajar con firebase*/
+using FireSharp.Interfaces; /*Agregamos las librerias para trabajar con firebase*/
+using static System.Windows.Forms.VisualStyles.VisualStyleElement; /*No le hagan caso, no se que es pero si lo quitan no sirve el código*/
 
 namespace ProyectoBd
 {
@@ -21,6 +21,7 @@ namespace ProyectoBd
             InitializeComponent();
         }
 
+        //Realizamos la conexion con la base de datos Online
         IFirebaseConfig ifcon = new FirebaseConfig()
         {
             AuthSecret = "mLe9t23Q7CGOXvJz2LR5vy7azdcTvFUu9Gp2YxzV",
@@ -30,14 +31,16 @@ namespace ProyectoBd
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+            //Les pique por error 
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            //Les pique por error 
         }
 
+        //Agregamos los datos en la base de datos
+        //La clase se encuentra como "Musica", ahi creamos estas variables
         private void Insertar_Click(object sender, EventArgs e)
         {
             Musica std = new Musica
@@ -49,12 +52,13 @@ namespace ProyectoBd
                 FechaLanz = txtFecha.Text,
                 Duracion = txtDuracion.Text,
                 Disquera = txtDisquera.Text,
-                //Imagen a realizar
+                
             };
             var setter = client.Set("Musica/" + txtId.Text, std);
             MessageBox.Show("Que buenos gustos ;)");
         }
 
+        //Esto igualmente es para verificar la conexion con la base de datos
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -67,6 +71,7 @@ namespace ProyectoBd
             }
         }
 
+        //Funcion para actualizar los datos en la base de datos
         private void Actualizar_Click(object sender, EventArgs e)
         {
             Musica std = new Musica
@@ -79,13 +84,17 @@ namespace ProyectoBd
                 Duracion = txtDuracion.Text,
                 Disquera = txtDisquera.Text,
             };
-            var setter = client.Update("Musica/" + txtId.Text, std);
+            /*Con el valor del "txtId" podemos realizar la conexion con 
+             * un array en especifico para realizar los cambios*/
+            var setter = client.Update("Musica/" + txtId.Text, std); 
             MessageBox.Show("Creo que te equivocaste al escribir, no?, No hay problema ;D");
         }
 
+        //Funcion para encontrar un conjunto de datos en la base de datos
         private void Seleccionar_Click(object sender, EventArgs e)
         {
-            var test = client.Get("Musica/" + txtId.Text);
+            //Igualmente el "txtId" es nuestra llave primaria para encontrar el array
+            var test = client.Get("Musica/" + txtId.Text); 
             Musica std = test.ResultAs<Musica>();
             txtNombre.Text = std.Nombre;
             txtAlbum.Text = std.Album;
@@ -96,20 +105,12 @@ namespace ProyectoBd
             MessageBox.Show("Lo agregaras a Spotify? :0");
         }
 
+        //Funcion para eliminar datos en la base de datos
         private void Eliminar_Click(object sender, EventArgs e)
         {
+            //Igualmente el "txtId" es nuestra llave primaria para eliminar el array
             var resultado = client.Delete("Musica/" + txtId.Text);
             MessageBox.Show("Desarrollamos nuevos gustos 7v7");
-        }
-
-        private void Buscar_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            if(ofd.ShowDialog() == DialogResult.OK)
-            {
-                Image image = Image.FromFile(ofd.FileName);
-                ImgAlbum.Image = image;
-            }
         }
     }
 }

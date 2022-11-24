@@ -15,6 +15,5 @@ namespace ProyectoBd
         public string FechaLanz { get; set; }  
         public string Duracion { get; set; }
         public string Disquera { get; set; }
-        public string Imagen { get; set; }
     }
 }
