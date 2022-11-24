@@ -8,6 +8,7 @@ namespace ProyectoBd
 {
     internal class Musica
     {
+        public string Id { get; set; }
         public string Nombre { get; set; }
         public string Album { get; set; }
         public string Artista { get; set; }
