@@ -112,5 +112,10 @@ namespace ProyectoBd
             var resultado = client.Delete("Musica/" + txtId.Text);
             MessageBox.Show("Desarrollamos nuevos gustos 7v7");
         }
+
+        private void txtDisquera_ControlRemoved(object sender, ControlEventArgs e)
+        {
+
+        }
     }
 }

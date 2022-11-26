@@ -94,6 +94,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(343, 22);
             this.txtId.TabIndex = 24;
+            this.txtId.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.txtDisquera_ControlRemoved);
             // 
             // txtDisquera
             // 
@@ -101,6 +102,7 @@
             this.txtDisquera.Name = "txtDisquera";
             this.txtDisquera.Size = new System.Drawing.Size(343, 22);
             this.txtDisquera.TabIndex = 21;
+            this.txtDisquera.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.txtDisquera_ControlRemoved);
             // 
             // label6
             // 
@@ -170,6 +172,7 @@
             this.txtDuracion.Name = "txtDuracion";
             this.txtDuracion.Size = new System.Drawing.Size(343, 22);
             this.txtDuracion.TabIndex = 14;
+            this.txtDuracion.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.txtDisquera_ControlRemoved);
             // 
             // txtFecha
             // 
@@ -177,6 +180,7 @@
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(343, 22);
             this.txtFecha.TabIndex = 13;
+            this.txtFecha.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.txtDisquera_ControlRemoved);
             // 
             // txtArtista
             // 
@@ -184,6 +188,7 @@
             this.txtArtista.Name = "txtArtista";
             this.txtArtista.Size = new System.Drawing.Size(343, 22);
             this.txtArtista.TabIndex = 12;
+            this.txtArtista.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.txtDisquera_ControlRemoved);
             // 
             // txtAlbum
             // 
@@ -191,6 +196,7 @@
             this.txtAlbum.Name = "txtAlbum";
             this.txtAlbum.Size = new System.Drawing.Size(343, 22);
             this.txtAlbum.TabIndex = 11;
+            this.txtAlbum.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.txtDisquera_ControlRemoved);
             // 
             // txtNombre
             // 
@@ -198,6 +204,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(343, 22);
             this.txtNombre.TabIndex = 10;
+            this.txtNombre.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.txtDisquera_ControlRemoved);
             // 
             // label7
             // 
