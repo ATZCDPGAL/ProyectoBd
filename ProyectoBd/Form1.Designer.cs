@@ -152,7 +152,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 32);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Albúm";
+            this.label2.Text = "Álbum";
             // 
             // label1
             // 
